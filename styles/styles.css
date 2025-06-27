@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Space Age';
+    src: url('../fonts/SpaceAge.eot');
+    src: url('../fonts/SpaceAge.eot') format('embedded-opentype'),
+        url('../fonts/SpaceAge.woff2') format('woff2'),
+        url('../fonts/SpaceAge.woff') format('woff'),
+        url('../fonts/SpaceAge.ttf') format('truetype'),
+        url('../fonts/SpaceAge.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Pagina-structuur */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../content/ruimte_achtergrond.jpg');
+  background-size: cover;
+
+  font-family: 'Space Age', sans-serif;
+}
+
+/* Zorgt ervoor dat de "doos" in het midden van de pagina staat :) */
+.wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  /* horizontaal centreren */
+  align-items: center;
+  /* verticaal centreren */
+}
+
+/* Opmaak van de doos. */
+/* Groene vlak met text erin. */
+.doos {
+  color: #fefae0;
+  padding: 1rem 1em;
+  text-align: center;
+  max-width: 40em;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 1em;
+
+  background: radial-gradient(circle at top left, #3a1c78, #1d0e45);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 0 40px rgba(255, 176, 255, 0.6),
+    0 0 60px rgba(144, 238, 255, 0.4),
+    0 0 120px rgba(144, 238, 255, 0.3),
+    inset 0 0 20px rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(6px);
+}
+
+
+.doos main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.doos h1 {
+  font-size: 50px;
+}
+
+.doos a {
+  background-color: #fefae0;
+  text-decoration: none;
+  color: limegreen;
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 0.5em;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.doos img {
+  max-width: 100%;
+  height: 15em;
+  border-radius: 0.5em;
+}
+
+.knoppen {
+  padding: 2em;
+  display: flex;
+  gap: 1rem;
+}
+
+.knoppen button {
+  padding: 0.7em 0.9em;
+  font-weight: bold;
+  color: #3a1c78;
+  border: none;
+  background-color: #f893ee;
+  border-radius: 0.5em;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.knoppen button:hover {
+  background-color: #e6fadc;
+}
+
+.knoppen button:active {
+  background-color: #c8f7b3;
+  transform: scale(0.97);
+}
+
+/* Opmaak en spatiëring van de footer. */
+footer {
+  color: #fefae0;
+  background-color: #f893ee;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.scoreDisplay {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 1em;
+}
