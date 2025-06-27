@@ -36,6 +36,7 @@ const levels = [
 
 // Huidige pagina bepalen 
 // Dit stukje weet ik echt niet. :( – Hij checkt op welke pagina de gebruiker zich bevindt
+// Gemnaakt met chatGPT
 let paginaNaam = window.location.pathname.split("/").pop();
 let huidigeIndex = levels.indexOf(paginaNaam);
 
@@ -84,6 +85,7 @@ function controleerAntwoord(antwoord) {
 }
 
 // Volgende pagina openen
+// Gemnaakt met chatGPT
 function volgendePagina() {
 	let volgende = levels[huidigeIndex + 1];
 	if (volgende) {
